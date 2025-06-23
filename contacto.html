@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto y Ubicación | DecoMotivo</title>
+    <meta name="description" content="Contacta con DecoMotivo. Visítanos en Mendoza 2372, San Miguel de Tucumán o solicita información sobre productos personalizados por WhatsApp o email.">
+    <meta name="keywords" content="contacto, ubicación, horarios, consultas, envíos, DecoMotivo, Tucumán">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="DecoMotivo">
+    <link rel="canonical" href="https://www.decomotivo.com.ar/contacto" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto y Ubicación | DecoMotivo">
+    <meta property="og:description" content="Contacta con DecoMotivo. Visítanos en Mendoza 2372, San Miguel de Tucumán o solicita información sobre productos personalizados.">
+    <meta property="og:image" content="https://www.decomotivo.com.ar/images/logo.png">
+    <meta property="og:url" content="https://www.decomotivo.com.ar/contacto">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/logoblanco.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="DecoMotivo Desing" class="logo-img">
+        </div>
+        <nav class="menu-center">
+          <ul class="menu">
+            <li><a href="inicio">Quienes Somos</a></li>
+            <li><a href="productos">Productos</a></li>
+            <li><a href="contacto" class="active">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <a href="faq.html" class="faq-btn" title="Preguntas Frecuentes">
+              <i class="fas fa-question"></i>
+          </a>
+      </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero contacto-hero">
+        <div class="container">
+          <h2>Contáctanos</h2>
+          <p>Estamos listos para transformar tu vida con diseños únicos</p>
+        </div>
+      </section>
+
+      <section class="info-contacto">
+        <div class="container">
+          <div class="contacto-grid">
+            <div class="datos-contacto">
+              <h2>Información de Contacto</h2>
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Dirección</h3>
+                  <p>Mendoza 2372, San Miguel de Tucumán, Tucumán, Argentina</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h3>Horario de Atención</h3>
+                  <p>Viernes: 17:00 - 21:00</p>
+                  <p>Sábados: 10:00 - 20:00</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h3>Teléfonos</h3>
+                  <p>+54 9 381 512-8279</p>
+                  <p>+54 9 381 631-4426</p>
+                </div>
+              </div>
+            </div>
+            <div class="mapa">
+                
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.445127451022!2d-65.23535672451172!3d-26.822023635267384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c5ea58a33e1%3A0x702e01c01574e685!2sPci%20a%20de%20Mendoza%202372%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1712764839782!5m2!1ses!2sar" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="formulario-contacto">
+        <div class="container">
+          <h2>Envíanos tu Consulta</h2>
+          <form id="contactForm" class="contacto-form" action="procesar-contacto.php" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre completo*</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico*</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Número de teléfono</label>
+              <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo de consulta*</label>
+              <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="pedido">Pedido personalizado</option>
+                <option value="informacion">Información de productos</option>
+                <option value="presupuesto">Solicitud de presupuesto</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje*</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="DecoMotivo Desing" class="footer-logo-img">
+          </div>
+
+          <div class="footer-slogan">
+            <p>Decorando Tu Vida...</p>
+          </div>
+
+          <div class="redes-sociales">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/deco_motivo" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 DecoMotivo. Todos los derechos reservados.</p>
+          <p>Diseñado por DecoMotivo</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
