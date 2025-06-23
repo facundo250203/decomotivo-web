@@ -1,0 +1,15 @@
+# Configurar página de inicio predeterminada
+DirectoryIndex inicio.html index.html index.php
+
+# Ocultar extensión .html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redireccionar de .html a sin extensión
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Redireccionar la raíz a inicio
+RewriteRule ^$ inicio [R=301,L]

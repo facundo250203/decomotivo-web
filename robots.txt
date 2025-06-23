@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /gracias.html
+Disallow: /procesar-contacto.php
+
+Sitemap: https://www.decomotivo.com.ar/sitemap.xml

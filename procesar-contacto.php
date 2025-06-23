@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Construir el cuerpo del mensaje
         $contenido = "Nombre: $nombre\n";
         $contenido .= "Email: $email\n";
-        $contenido .= "Teléfono: $telefono\n";
+        $contenido .= "Telefono: $telefono\n";
         $contenido .= "Tipo de consulta: $tipo\n\n";
         $contenido .= "Mensaje:\n$mensaje\n";
         
